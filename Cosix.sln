@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosixKernel", "CosixKernel\CosixKernel.csproj", "{DA4E974B-85E2-4848-A495-FED01CC5E56F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA4E974B-85E2-4848-A495-FED01CC5E56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4E974B-85E2-4848-A495-FED01CC5E56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4E974B-85E2-4848-A495-FED01CC5E56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4E974B-85E2-4848-A495-FED01CC5E56F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {918DA161-7F21-46A0-BAFC-94BD96EC4607}
+	EndGlobalSection
+EndGlobal
