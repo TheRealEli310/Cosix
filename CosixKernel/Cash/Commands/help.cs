@@ -10,6 +10,7 @@ namespace CosixKernel.Cash.Commands
         {
             Console.WriteLine("=== Help ===");
             Console.WriteLine("help - Display this!");
+            Console.WriteLine("ver - Get the version number");
         }
     }
 }
