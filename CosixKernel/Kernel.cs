@@ -9,7 +9,11 @@ namespace CosixKernel
     {
         protected override void BeforeRun()
         {
-            Console.WriteLine("[OK] Cosmos loaded. Booting the kernel!");
+            Console.WriteLine("Cosmos loaded. Booting the kernel!");
+            Console.WriteLine("Initializing components.");
+            
+            
+
         }
 
         protected override void Run()
