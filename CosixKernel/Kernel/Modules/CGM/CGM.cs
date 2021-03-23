@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using Cosmos.HAL;
+using System.Text;
+using Cosmos.System.Graphics;
+using Cosmos.System;
+using Sys = Cosmos.System;
+
+namespace CosixKernel.Modules
+{
+    class CGM
+    {
+        private static int vstate = 0;
+        public static void Init(bool db)
+        {
+            
+            if (db)
+            {
+                VGADriverII.Initialize(VGAMode.Pixel320x200DB);
+                vstate = 2;
+            }
+            else
+            {
+                VGADriverII.Initialize(VGAMode.Pixel320x200);
+                vstate = 1;
+            }
+            MouseManager.ScreenHeight = 200;
+            MouseManager.ScreenWidth = 320;
+            VGADriverII.Clear(223);
+            if (vstate == 2)
+            {
+                VGADriverII.Display();
+            }
+        }
+        public static void Run()
+        {
+            VGADriverII.Clear(247);
+            VGAGraphics.DrawString(0,0,"Cosix Graphics Manager",VGAColor.Black,VGAFont.Font8x8);
+            VGAGraphics.DrawFilledRect(300,180,20,20,VGAColor.Red);
+            VGAGraphics.DrawFilledRect((int)MouseManager.X, (int)MouseManager.Y, 2, 2, VGAColor.Blue);
+            if (vstate == 2)
+            {
+                VGAGraphics.Display();
+            }
+            if ((MouseManager.X > 300) & (MouseManager.Y > 180) & (MouseManager.MouseState == MouseState.Left))
+            {
+                Sys.Power.Shutdown();
+            }
+        }
+        public static int VStateGet()
+        {
+            return vstate;
+        }
+    }
+}

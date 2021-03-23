@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CosixKernel.Drivers
+namespace Cosmos.HAL.Network
 {
-    class Networking
+    class KNetworking
     {
         public static Cosmos.System.Network.UdpClient udpClient = new Cosmos.System.Network.UdpClient();
         public static void Connect(Cosmos.System.Network.IPv4.Address dest,int destPort)

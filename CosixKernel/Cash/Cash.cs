@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using LibDotNetParser.DotNet;
+using Cosmos.HAL;
+using Cosmos.System.Graphics;
 
 namespace CosixKernel.Cash
 {
@@ -9,8 +10,8 @@ namespace CosixKernel.Cash
     {
         public static void Shell()
         {
-            Console.Write("root@cosix:/#");
-            Call(Console.ReadLine());
+            Terminal.Write("root@cosix:/#");
+            Call(Terminal.ReadLine());
         }
         public static void Call(string cmdfull)
         {
@@ -24,9 +25,40 @@ namespace CosixKernel.Cash
                 case "ver":
                     Commands.Ver.Main();
                     break;
-                default:
-                    Console.WriteLine("cash: Command not found");
+                case "crash":
+                    Kernel.Crash(new Exception("Manual crash!"));
                     break;
+                case "mode":
+                    try
+                    {
+                        switch (cmdsplit[1])
+                        {
+                            case "0":
+                                VGADriverII.SetMode(VGAMode.Text80x25);
+                                Terminal.Clear();
+                                break;
+                            case "1":
+                                VGADriverII.SetMode(VGAMode.Text80x50);
+                                Terminal.Clear();
+                                break;
+                            case "2":
+                                VGADriverII.SetMode(VGAMode.Text90x60);
+                                Terminal.Clear();
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    catch { }
+                    break;
+                case "vmode":
+                    Modules.CGM.Init(true);
+                    VGADriverII.Clear(247);
+                    break;
+                default:
+                    Terminal.WriteLine("cash: Command not found");
+                    break;
+                
             }
         }
         public static void RunFile(string path)

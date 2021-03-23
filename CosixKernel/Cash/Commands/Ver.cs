@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using CosixKernel.Api;
+using Cosmos.HAL;
 
 namespace CosixKernel.Cash.Commands
 {
@@ -9,7 +10,7 @@ namespace CosixKernel.Cash.Commands
     {
         public static void Main()
         {
-            Console.WriteLine("Cosix (" + KVersion.getBuild().ToString() + ")");
+            Terminal.WriteLine("Cosix (" + KVersion.getBuild().ToString() + ")");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cosmos.HAL;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -25,11 +26,11 @@ namespace CosixKernel.Modules
         }
         public static void UserExceptionHandler(Exception e)
         {
-            Console.WriteLine("User Mode " + e.ToString());
+            Terminal.WriteLine("User Mode " + e.ToString());
         }
         private static void Elevate()
         {
-            Console.WriteLine("A program in user mode is asking for elevation. Elevate to perm level {0}? (Y/N) ",perml + 1);
+            Terminal.WriteLine("A program in user mode is asking for elevation. Elevate to perm level " + (perml + 1).ToString() + "? (Y/N) ");
             var yn = Console.ReadKey().KeyChar.ToString();
             if (yn == "y")
             {
