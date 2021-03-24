@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Cosmos.HAL;
+using Cosmos.System.Graphics;
 using Cosmos.HAL.Network;
 using Sys = Cosmos.System;
 
@@ -39,6 +40,19 @@ namespace CosixKernel
                 while (true)
                 {
                     Terminal.DisableCursor();
+                }
+            }
+            else
+            {
+                VGADriverII.Clear(229);
+                VGAGraphics.DrawString(0, 0, "A fatal exception occured!\n" + e.ToString() + "\nPlease report this to the Cosix devs.", VGAColor.White, VGAFont.Font8x8);
+                if (Modules.CGM.VStateGet() == 2)
+                {
+                    VGADriverII.Display();
+                }
+                while (true)
+                {
+                    
                 }
             }
         }

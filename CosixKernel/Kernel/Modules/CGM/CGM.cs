@@ -13,7 +13,6 @@ namespace CosixKernel.Modules
         private static int vstate = 0;
         public static void Init(bool db)
         {
-            
             if (db)
             {
                 VGADriverII.Initialize(VGAMode.Pixel320x200DB);
@@ -44,12 +43,36 @@ namespace CosixKernel.Modules
             }
             if ((MouseManager.X > 300) & (MouseManager.Y > 180) & (MouseManager.MouseState == MouseState.Left))
             {
-                Sys.Power.Shutdown();
+                GoText();
+                Terminal.TextColor = ConsoleColor.White;
+                Terminal.BackColor = ConsoleColor.Black;
+                Terminal.Clear();
             }
         }
         public static int VStateGet()
         {
             return vstate;
+        }
+        public static void GoText()
+        {
+            VGADriverII.Initialize(VGAMode.Text90x60);
+            vstate = 0;
+        }
+        public enum VStates
+        {
+            Text = 0,
+            GraphicsSB = 1,
+            GraphicsDB = 2,
+        }
+        public class Window
+        {
+            public int X { get; }
+            public int Y { get; }
+            public VGAColor BackColor { get; }
+            public Window(int x, int y, VGAColor bg)
+            {
+                (X, Y,BackColor) = (x, y,bg);
+            }
         }
     }
 }
