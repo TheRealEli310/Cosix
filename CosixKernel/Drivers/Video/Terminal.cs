@@ -10,6 +10,9 @@ namespace Cosmos.HAL
     {
         // cursor
         public static int CursorX { get; private set; }
+
+        
+
         public static int CursorY { get; private set; }
 
         // colors
@@ -68,6 +71,7 @@ namespace Cosmos.HAL
         public static void WriteLine(string text, ConsoleColor fg, ConsoleColor bg) { Write(text + "\n", fg, bg); }
         public static void WriteLine(string text, ConsoleColor fg) { WriteLine(text, fg, BackColor); }
         public static void WriteLine(string text) { WriteLine(text, TextColor, BackColor); }
+        public static void WriteLine() { WriteLine(""); }
 
         // backspace input
         private static void Backspace()
@@ -107,6 +111,8 @@ namespace Cosmos.HAL
             }
             return input;
         }
+        // read key
+        public static ConsoleKeyInfo ReadKey() { return Console.ReadKey(); }
 
         // generate new line
         public static void NewLine()

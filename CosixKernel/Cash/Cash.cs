@@ -55,6 +55,11 @@ namespace CosixKernel.Cash
                     Modules.CGM.Init(true);
                     VGADriverII.Clear(247);
                     break;
+                case "mill":
+                    Windmill.Windmill runner = new Windmill.Windmill(4096);
+                    for (; !runner.program[runner.index].Equals(0);)
+                        runner.RunNext();
+                    break;
                 default:
                     Terminal.WriteLine("cash: Command not found");
                     break;
