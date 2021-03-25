@@ -17,6 +17,7 @@ namespace CosixKernel.Cash
         {
             string[] cmdsplit = cmdfull.Split(" ");
             string cmd = cmdsplit[0];
+            Kernel.RunInit();
             switch (cmd)
             {
                 case "help":
@@ -65,6 +66,7 @@ namespace CosixKernel.Cash
                     break;
                 
             }
+            Kernel.ProgramStop();
         }
         public static void RunFile(string path)
         {

@@ -10,6 +10,9 @@ namespace CosixKernel
 {
     public class Kernel : Sys.Kernel
     {
+        private static uint pid = 0;
+        public static uint Controlling { get { return pid; } }
+        private static uint tpid = 0;
         protected override void BeforeRun()
         {
             VGADriverII.Initialize(VGAMode.Text90x60);
@@ -21,7 +24,9 @@ namespace CosixKernel
         {
             if (Modules.CGM.VStateGet() == 0)
             {
+                RunInit();
                 Cash.Cash.Shell();
+                ProgramStop();
             }
             else
             {
@@ -55,6 +60,18 @@ namespace CosixKernel
                     
                 }
             }
+        }
+        public static void RunInit()
+        {
+            pid++;
+        }
+        public static void ProgramStop()
+        {
+            while (Drivers.VirtualRam.UnAlloc())
+            {
+
+            }
+            pid--;
         }
     }
 }
