@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using Cosmos.HAL;
 using Cosmos.System.Graphics;
+using CosixKernel.Apps.MIV;
+using System.IO;
 
 namespace CosixKernel.Cash
 {
@@ -20,6 +22,8 @@ namespace CosixKernel.Cash
             Kernel.RunInit();
             switch (cmd)
             {
+                case "":
+                    break;
                 case "help":
                     Commands.Help.Main();
                     break;
@@ -60,6 +64,47 @@ namespace CosixKernel.Cash
                     Windmill.Windmill runner = new Windmill.Windmill(4096);
                     for (; !runner.program[runner.index].Equals(0);)
                         runner.RunNext();
+                    break;
+                case "miv":
+                    if (1 < cmdsplit.Length)
+                    {
+                        Kernel.file = cmdsplit[1];
+                        if (File.Exists(cmdsplit[1]))
+                        {
+                            File.WriteAllText(Kernel.file, MIV.miv(File.ReadAllText(cmdsplit[1])));
+                        }
+                        else
+                        {
+                            File.WriteAllText(Kernel.file, MIV.miv(null));
+                        }
+                        
+                    }
+                    else
+                    {
+                        MIV.StartMIV();
+                    }
+                    break;
+                case "dir":
+                    string[] filePaths = Directory.GetFiles(@"0:\");
+                    var drive = new DriveInfo("0");
+                    Terminal.WriteLine("Volume in drive 0 is " + $"{drive.VolumeLabel}");
+                    Terminal.WriteLine("Directory of " + @"0:\");
+                    Terminal.WriteLine("\n");
+                    for (int i = 0; i < filePaths.Length; ++i)
+                    {
+                        string path = filePaths[i];
+                        Terminal.WriteLine(System.IO.Path.GetFileName(path));
+                    }
+                    foreach (var d in System.IO.Directory.GetDirectories(@"0:\"))
+                    {
+                        var dir = new DirectoryInfo(d);
+                        var dirName = dir.Name;
+
+                        Terminal.WriteLine(dirName + " <DIR>");
+                    }
+                    Terminal.WriteLine("\n");
+                    Terminal.WriteLine("        " + $"{drive.TotalSize}" + " bytes");
+                    Terminal.WriteLine("        " + $"{drive.AvailableFreeSpace}" + " bytes free");
                     break;
                 default:
                     Terminal.WriteLine("cash: Command not found");

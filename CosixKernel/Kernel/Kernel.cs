@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Cosmos.HAL;
 using Cosmos.System.Graphics;
+using System.IO;
 using Cosmos.HAL.Network;
 using Sys = Cosmos.System;
 
@@ -12,27 +13,38 @@ namespace CosixKernel
     {
         private static uint pid = 0;
         public static uint Controlling { get { return pid; } }
-        private static uint tpid = 0;
+        public static string file;
         protected override void BeforeRun()
         {
+            Console.WriteLine("Cosmos loaded. Booting the kernel!");
+            Console.WriteLine("Initializing components.");
+            Console.WriteLine("FS Driver");
+            var fs = new Sys.FileSystem.CosmosVFS();
+            Sys.FileSystem.VFS.VFSManager.RegisterVFS(fs);
+            Console.WriteLine("VGA Driver");
             VGADriverII.Initialize(VGAMode.Text90x60);
-            Terminal.WriteLine("Cosmos loaded. Booting the kernel!");
-            Terminal.WriteLine("Initializing components.");
-        }
+            Terminal.Clear();
 
+        }
         protected override void Run()
         {
-            if (Modules.CGM.VStateGet() == 0)
+            try
             {
-                RunInit();
-                Cash.Cash.Shell();
-                ProgramStop();
+                if (Modules.CGM.VStateGet() == 0)
+                {
+                    RunInit();
+                    Cash.Cash.Shell();
+                    ProgramStop();
+                }
+                else
+                {
+                    Modules.CGM.Run();
+                }
             }
-            else
+            catch (Exception e)
             {
-                Modules.CGM.Run();
+                Crash(e);
             }
-            
         }
         public static void Crash(Exception e)
         {

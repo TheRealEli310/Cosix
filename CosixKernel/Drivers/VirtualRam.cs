@@ -23,7 +23,8 @@ namespace CosixKernel.Drivers
         }
         public static bool UnAlloc()
         {
-            int pi = 0;
+            return false;
+            /*int pi = 0;
             foreach (var pidc in allocpid)
             {
                 if (pidc == Kernel.Controlling)
@@ -46,14 +47,16 @@ namespace CosixKernel.Drivers
             var allocl = alloc.ToList();
             var allocpidl = allocpid.ToList();
             allocpidl.RemoveAt(pi);
-            allocl.RemoveRange(pi,2);
+            allocl.RemoveAt(pi);
+            allocl.RemoveAt(pi+1);
             alloc = allocl.ToArray();
             allocpid = allocpidl.ToArray();
             return true;
+            */
         }
         public static void Alloc(uint start, uint end)
         {
-            uint[] region = new uint[2];
+            /*uint[] region = new uint[2];
             region[0] = start;
             region[1] = end;
             for (uint i = region[0]; i <= region[1]; i++)
@@ -67,6 +70,7 @@ namespace CosixKernel.Drivers
             allocl.Add(region[1]);
             alloc = allocl.ToArray();
             allocpid = allocpidl.ToArray();
+            */
         }
         public static bool IsOwned(uint pid,uint addr)
         {

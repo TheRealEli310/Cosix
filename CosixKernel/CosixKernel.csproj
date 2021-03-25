@@ -12,6 +12,7 @@
         <DebugMode>Source</DebugMode>
         <IgnoreDebugStubAttribute>False</IgnoreDebugStubAttribute>
         <ISOFile>bin\Debug\netcoreapp2.0\cosmos\CosixKernel.iso</ISOFile>
+        <VMwareEdition>Workstation</VMwareEdition>
     </PropertyGroup>
 
     <PropertyGroup>

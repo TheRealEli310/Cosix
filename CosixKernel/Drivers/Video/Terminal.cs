@@ -66,13 +66,12 @@ namespace Cosmos.HAL
         }
         public static void Write(string text, ConsoleColor fg) { Write(text, fg, BackColor); }
         public static void Write(string text) { Write(text, TextColor, BackColor); }
-
+        public static void Write(char v) { Write(v.ToString()); }
         // print line to next positoin
         public static void WriteLine(string text, ConsoleColor fg, ConsoleColor bg) { Write(text + "\n", fg, bg); }
         public static void WriteLine(string text, ConsoleColor fg) { WriteLine(text, fg, BackColor); }
         public static void WriteLine(string text) { WriteLine(text, TextColor, BackColor); }
         public static void WriteLine() { WriteLine(""); }
-
         // backspace input
         private static void Backspace()
         {
@@ -125,6 +124,8 @@ namespace Cosmos.HAL
             }
             else { SetCursorPos(0, CursorY); }
         }
+
+        internal static ConsoleKeyInfo ReadKey(bool v) { return Console.ReadKey(v); }
 
         // scroll by one line
         private static unsafe void Scroll()

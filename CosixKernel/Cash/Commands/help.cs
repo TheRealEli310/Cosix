@@ -14,6 +14,8 @@ namespace CosixKernel.Cash.Commands
             Terminal.WriteLine("ver - Get the version number");
             Terminal.WriteLine("mode (0-2) - Set text resolution");
             Terminal.WriteLine("crash - Crashes the OS");
+            Terminal.WriteLine("vmode - Activate graphics mode");
+            Terminal.WriteLine("mill - Run windmill (WIP)");
         }
     }
 }

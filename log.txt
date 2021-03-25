@@ -1,0 +1,227 @@
+Microsoft (R) Build Engine version 16.8.2+25e4d540b for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "-m" switch.
+Build started 25/03/2021 6:05:32 PM.
+Project "C:\Users\Eli\source\repos\Cosix\Cosix.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|Any CPU".
+Project "C:\Users\Eli\source\repos\Cosix\Cosix.sln" (1) is building "C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj" (2) on node 1 (default targets).
+C:\Program Files\dotnet\sdk\5.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'netcoreapp2.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj]
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreGenerateAssemblyInfo:
+Skipping target "CoreGenerateAssemblyInfo" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+GenerateBuildDependencyFile:
+Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  CosixKernel -> C:\Users\Eli\source\repos\Cosix\CosixKernel\bin\Debug\netcoreapp2.0\cosmos\CosixKernel.dll
+IL2CPU:
+  C:\Users\Eli\AppData\Roaming\Cosmos User Kit\Build\IL2CPU\IL2CPU.exe KernelPkg:
+  EnableDebug:False
+  EnableStackCorruptionDetection:True
+  StackCorruptionDetectionLevel:MethodFooters
+  DebugMode:Source
+  TraceAssemblies:
+  DebugCom:0
+  TargetAssembly:C:\Users\Eli\source\repos\Cosix\CosixKernel\bin\Debug\netcoreapp2.0\cosmos\CosixKernel.dll
+  OutputFilename:C:\Users\Eli\source\repos\Cosix\CosixKernel\bin\Debug\netcoreapp2.0\cosmos\CosixKernel.asm
+  EnableLogging:True
+  EmitDebugSymbols:True
+  IgnoreDebugStubAttribute:False
+  References:C:\Users\Eli\source\repos\Cosix\CosixKernel\obj\Debug\netcoreapp2.0\cosmos\CosixKernel.dll
+  References:C:\Users\Eli\.nuget\packages\cosmos.common\0.1.0-localbuild20210106121718\lib\netstandard2.0\Cosmos.Common.dll
+  References:C:\Users\Eli\.nuget\packages\cosmos.core\0.1.0-localbuild20210106121718\lib\netstandard2.0\Cosmos.Core.dll
+  References:C:\Users\Eli\.nuget\packages\cosmos.debug.kernel\0.1.0-localbuild20210106121718\lib\netstandard2.0\Cosmos.Debug.Kernel.dll
+  References:C:\Users\Eli\.nuget\packages\cosmos.hal2\0.1.0-localbuild20210106121718\lib\netstandard2.0\Cosmos.HAL2.dll
+  References:C:\Users\Eli\.nuget\packages\cosmos.system2\0.1.0-localbuild20210106121718\lib\netstandard2.0\Cosmos.System2.dll
+  References:C:\Users\Eli\.nuget\packages\il2cpu.api\0.1.0-localbuild20210106121718\lib\netstandard2.0\IL2CPU.API.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\Microsoft.CSharp.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\Microsoft.VisualBasic.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\Microsoft.Win32.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\Microsoft.Win32.Registry.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\SOS.NETCore.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.AppContext.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Buffers.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Collections.Concurrent.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Collections.Immutable.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Collections.NonGeneric.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Collections.Specialized.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Collections.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ComponentModel.Annotations.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ComponentModel.Composition.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ComponentModel.DataAnnotations.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ComponentModel.EventBasedAsync.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ComponentModel.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ComponentModel.TypeConverter.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ComponentModel.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Configuration.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Console.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Core.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Data.Common.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Data.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.Contracts.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.Debug.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.DiagnosticSource.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.FileVersionInfo.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.Process.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.StackTrace.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.TextWriterTraceListener.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.Tools.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.TraceSource.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Diagnostics.Tracing.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Drawing.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Drawing.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Dynamic.Runtime.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Globalization.Calendars.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Globalization.Extensions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Globalization.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.Compression.FileSystem.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.Compression.ZipFile.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.Compression.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.FileSystem.AccessControl.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.FileSystem.DriveInfo.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.FileSystem.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.FileSystem.Watcher.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.FileSystem.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.IsolatedStorage.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.MemoryMappedFiles.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.Pipes.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.UnmanagedMemoryStream.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.IO.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Linq.Expressions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Linq.Parallel.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Linq.Queryable.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Linq.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.Http.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.HttpListener.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.Mail.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.NameResolution.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.NetworkInformation.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.Ping.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.Requests.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.Security.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.ServicePoint.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.Sockets.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.WebClient.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.WebHeaderCollection.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.WebProxy.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.WebSockets.Client.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.WebSockets.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Net.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Numerics.Vectors.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Numerics.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ObjectModel.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Private.DataContractSerialization.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Private.Uri.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Private.Xml.Linq.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Private.Xml.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.DispatchProxy.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.Emit.ILGeneration.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.Emit.Lightweight.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.Emit.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.Extensions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.Metadata.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.TypeExtensions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Reflection.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Resources.Reader.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Resources.ResourceManager.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Resources.Writer.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.CompilerServices.VisualC.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Extensions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Handles.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.InteropServices.RuntimeInformation.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.InteropServices.WindowsRuntime.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.InteropServices.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Loader.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Numerics.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Serialization.Formatters.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Serialization.Json.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Serialization.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Serialization.Xml.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.Serialization.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Runtime.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.AccessControl.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Claims.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Cryptography.Algorithms.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Cryptography.Cng.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Cryptography.Csp.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Cryptography.Encoding.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Cryptography.OpenSsl.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Cryptography.Primitives.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Cryptography.X509Certificates.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Principal.Windows.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.Principal.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.SecureString.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Security.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ServiceModel.Web.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ServiceProcess.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Text.Encoding.Extensions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Text.Encoding.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Text.RegularExpressions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.Overlapped.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.Tasks.Dataflow.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.Tasks.Extensions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.Tasks.Parallel.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.Tasks.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.Thread.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.ThreadPool.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.Timer.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Threading.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Transactions.Local.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Transactions.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.ValueTuple.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Web.HttpUtility.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Web.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Windows.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.Linq.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.ReaderWriter.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.Serialization.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.XDocument.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.XPath.XDocument.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.XPath.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.XmlDocument.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.XmlSerializer.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.Xml.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\System.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\WindowsBase.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\mscorlib.dll
+  References:C:\Users\Eli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\2.0.9\runtimes\win-x86\lib\netcoreapp2.0\netstandard.dll
+  PlugsReferences:C:\Users\Eli\AppData\Roaming\Cosmos User Kit\Kernel\Cosmos.Core_Asm.dll
+  PlugsReferences:C:\Users\Eli\AppData\Roaming\Cosmos User Kit\Kernel\Cosmos.Core_Plugs.dll
+  PlugsReferences:C:\Users\Eli\AppData\Roaming\Cosmos User Kit\Kernel\Cosmos.Debug.Kernel.Plugs.Asm.dll
+  PlugsReferences:C:\Users\Eli\AppData\Roaming\Cosmos User Kit\Kernel\Cosmos.System2_Plugs.dll
+  Message: Executing IL2CPU on assembly
+  Message: Kernel Base: Cosmos.System.Kernel
+  Message: Checking target assembly: C:\Users\Eli\source\repos\Cosix\CosixKernel\bin\Debug\netcoreapp2.0\cosmos\CosixKernel.dll
+IL2CPU : error : Exception: System.ArgumentException: Interface maps for generic interfaces on arrays cannot be retrieved. [C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj]
+     at System.RuntimeType.GetInterfaceMap(Type ifaceType)
+     at Cosmos.IL2CPU.ILScanner.ScanMethod(MethodBase aMethod, Boolean aIsPlug, String sourceItem) in C:\Users\nicol\Documents\projects\cosmos\IL2CPU\source\Cosmos.IL2CPU\ILScanner.cs:line 561
+     at Cosmos.IL2CPU.ILScanner.ScanQueue() in C:\Users\nicol\Documents\projects\cosmos\IL2CPU\source\Cosmos.IL2CPU\ILScanner.cs:line 772
+     at Cosmos.IL2CPU.ILScanner.Execute(MethodBase aStartMethod, IEnumerable`1 plugsAssemblies) in C:\Users\nicol\Documents\projects\cosmos\IL2CPU\source\Cosmos.IL2CPU\ILScanner.cs:line 264
+     at Cosmos.IL2CPU.CompilerEngine.Execute() in C:\Users\nicol\Documents\projects\cosmos\IL2CPU\source\Cosmos.IL2CPU\CompilerEngine.cs:line 206
+  IL2CPU task took 00:00:01.1041860
+Done Building Project "C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj" (default targets) -- FAILED.
+Done Building Project "C:\Users\Eli\source\repos\Cosix\Cosix.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\Eli\source\repos\Cosix\Cosix.sln" (default target) (1) ->
+"C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj" (default target) (2) ->
+(_CheckForEolTargetFrameworks target) -> 
+  C:\Program Files\dotnet\sdk\5.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'netcoreapp2.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj]
+
+
+"C:\Users\Eli\source\repos\Cosix\Cosix.sln" (default target) (1) ->
+"C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj" (default target) (2) ->
+(IL2CPU target) -> 
+  IL2CPU : error : Exception: System.ArgumentException: Interface maps for generic interfaces on arrays cannot be retrieved. [C:\Users\Eli\source\repos\Cosix\CosixKernel\CosixKernel.csproj]
+
+    1 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:02.82
