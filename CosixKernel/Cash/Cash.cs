@@ -12,7 +12,7 @@ namespace CosixKernel.Cash
     {
         public static void Shell()
         {
-            Terminal.Write("root@cosix:/#");
+            Terminal.Write(Modules.UC.username + "@cosix:/#");
             Call(Terminal.ReadLine());
         }
         public static void Call(string cmdfull)
@@ -50,15 +50,15 @@ namespace CosixKernel.Cash
                                 VGADriverII.SetMode(VGAMode.Text90x60);
                                 Terminal.Clear();
                                 break;
+                            case "3":
+                                Modules.CGM.Init(true);
+                                VGADriverII.Clear(247);
+                                break;
                             default:
                                 break;
                         }
                     }
                     catch { }
-                    break;
-                case "vmode":
-                    Modules.CGM.Init(true);
-                    VGADriverII.Clear(247);
                     break;
                 case "mill":
                     Windmill.Windmill runner = new Windmill.Windmill(4096);
@@ -71,11 +71,11 @@ namespace CosixKernel.Cash
                         Kernel.file = cmdsplit[1];
                         if (File.Exists(cmdsplit[1]))
                         {
-                            File.WriteAllText(Kernel.file, MIV.miv(File.ReadAllText(cmdsplit[1])));
+                            File.WriteAllText(@"0:\" + Kernel.file, MIV.miv(File.ReadAllText(cmdsplit[1])));
                         }
                         else
                         {
-                            File.WriteAllText(Kernel.file, MIV.miv(null));
+                            File.WriteAllText(@"0:\" + Kernel.file, MIV.miv(null));
                         }
                         
                     }
@@ -106,6 +106,18 @@ namespace CosixKernel.Cash
                     Terminal.WriteLine("        " + $"{drive.TotalSize}" + " bytes");
                     Terminal.WriteLine("        " + $"{drive.AvailableFreeSpace}" + " bytes free");
                     break;
+                case "power":
+                    Commands.Power.Main(cmdsplit);
+                    break;
+                case "elev":
+                    Modules.UC.Elevate();
+                    break;
+                case "login":
+                    Modules.UC.username = cmdsplit[1];
+                    break;
+                case "clear":
+                    Terminal.Clear();
+                    break;
                 default:
                     Terminal.WriteLine("cash: Command not found");
                     break;
@@ -116,6 +128,30 @@ namespace CosixKernel.Cash
         public static void RunFile(string path)
         {
             throw new NotImplementedException();
+        }
+    }
+    namespace Commands
+    {
+        class Power
+        { 
+            public static void Main(string[] args)
+            {
+                if (1 < args.Length)
+                {
+                    if (args[1] == "s")
+                    {
+                        Kernel.Shutdown();
+                    }
+                    if (args[1] == "r")
+                    {
+                        Kernel.Restart();
+                    }
+                }
+                else
+                {
+                    
+                }
+            }
         }
     }
 }

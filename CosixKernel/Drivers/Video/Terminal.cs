@@ -145,6 +145,7 @@ namespace Cosmos.HAL
         public static void SetCursorY(int y) { SetCursorPos(CursorX, y); }
         public static void UpdateCursor() { SetCursorPos(CursorX, CursorY); }
         public static void DisableCursor() { VGADriverII.DisableCursor(); }
+        public static void EnableCursor() { VGADriverII.EnableCursor(14,15); }
 
         // convert colors to attribute
         public static byte ToAttribute(VGAColor fg, VGAColor bg) { return (byte)((byte)fg | (byte)bg << 4); }

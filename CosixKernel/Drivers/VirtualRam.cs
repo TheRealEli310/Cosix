@@ -74,7 +74,8 @@ namespace CosixKernel.Drivers
         }
         public static bool IsOwned(uint pid,uint addr)
         {
-            int pi = 0;
+            return true;
+            /*int pi = 0;
             foreach (var pida in allocpid)
             {
                 if (pida == pid)
@@ -97,7 +98,7 @@ namespace CosixKernel.Drivers
                     return true;
                 }
             }
-            return false;
+            return false;*/
         }
     }
 }
